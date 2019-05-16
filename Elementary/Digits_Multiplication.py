@@ -19,10 +19,11 @@ For example: The number given is 123405. The result will be 1*2*3*4*5=120 (don't
 
 def checkio(number: int) -> int:
 	numbers = str(number)
-	couls = ''
+	couls = 1
 	for x in numbers:
-		couls = x
-
+		num = int(x)
+		if num > 0:
+			couls *= num
 	return couls
 		
 
