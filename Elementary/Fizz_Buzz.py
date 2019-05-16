@@ -21,14 +21,14 @@ The number as a string for other cases.
 
 
 def checkio(number: int) -> str:
-    if number % 3 and number % 5:
-    	return "Fizz Buzz"
-    elif number % 3:
+    if number % 3 == 0 and number % 5 == 0:
+        return "Fizz Buzz"
+    elif number % 3 == 0:
     	return "Fizz"
-    elif number % 5:
+    elif number % 5 == 0:
     	return "Buzz"
     else:
-    	return number
+    	return str(number)
 
 # Some hints:
 # Convert a number in the string with str(n)
