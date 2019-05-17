@@ -15,7 +15,7 @@ def checkio(array):
 	for num in range(leng):
 		if num % 2 == 0 and leng > 0:
 			count += array[num]
-	if count > 0 :
+	if count > 0 or count < 0:
 		return count * array[-1]
 	else:
 		return 0
