@@ -1,20 +1,19 @@
 '''
-You are given a sequence of strings. You should join these strings into chunk of text where the initial strings are separated by commas. As a joke on the right handed robots, you should replace all cases of the words "right" with the word "left", even if it's a part of another word. All strings are given in lowercase.
+You are given a sequence of strings. You should join these strings into chunk of text where
+the initial strings are separated by commas. As a joke on the right handed robots, you should replace all
+cases of the words "right" with the word "left",
+even if it's a part of another word. All strings are given in lowercase.
 
 Input: A sequence of strings as a tuple of strings (unicode).
 
 Output: The text as a string.
 '''
 
-
 def left_join(phrases):
 	cout = []
 	for text in phrases:
-		if text in 'right':
-			counts = text.replace('right', 'left')
-			cout.append(counts)
-		else:
-			cout.append(text)
+		counts = text.replace('right', 'left')
+		cout.append(counts)
 
 	return ','.join(cout)
 
