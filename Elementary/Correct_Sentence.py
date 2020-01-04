@@ -5,10 +5,7 @@ Pay attention to the fact that not all of the fixes are necessary. If a sentence
 
 Input: A string.
 
-Output: A string.
-'''
-
-
+Output: A string.'''
 def correct_sentence(text: str) -> str:
 		texts = list(text)
 		texts[0] = texts[0].title()
