@@ -2,12 +2,8 @@
 You are given two strings and you have to find an index of the second occurrence of the second string in the first one.
 '''
 def second_index(text: str, symbol: str) -> [int, None]:
-    """
-        returns the second index of a symbol in a given text
-    """
-    # your code here
-    return 0
-
+    if symbol in text and text.count(symbol) > 1  :
+        return text.find(symbol, text.find(symbol)+1)
 
 if __name__ == '__main__':
     print('Example:')
