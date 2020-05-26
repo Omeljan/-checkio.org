@@ -24,8 +24,8 @@ index_power([1, 2], 3) == -1
 '''
 
 def index_power(array: list, n: int) -> int:
-    count = len(array)
-    if n > count or n == count:
+	
+    if n > len(array) or n == len(array):
         return  -1
     else:
         return  array[n]**n

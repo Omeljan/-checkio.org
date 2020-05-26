@@ -15,7 +15,7 @@ if __name__ == '__main__':
         'WIG': 1.2
     }))
 
-    # These "asserts" are used for self-checking and not for an auto-testing
+#These "asserts" are used foыr self-checking and not for an auto-testing
     assert best_stock({
         'CAC': 10.0,
         'ATX': 390.2,
